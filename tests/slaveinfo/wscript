@@ -1,0 +1,13 @@
+# Copyright 2017 Intermodalics
+# Original author: Kevin De Martelaere <kevin.demartelaere@intermodalics.eu>
+
+import rtems_waf.rtems as rtems
+
+def build(bld):
+    rtems.build(bld)
+
+    bld.program(
+        target = 'slaveinfo.exe',
+        features = 'c',
+        source = ['slaveinfo.c'],
+        use = ['SOEM','BSD'])

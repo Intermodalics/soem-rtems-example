@@ -1,0 +1,4 @@
+[submodule "rtems_waf"]
+	path = rtems_waf
+	url = git://git.rtems.org/chrisj/rtems_waf.git
+	branch = master
